@@ -62,6 +62,13 @@ public class HomePage {
 		Thread.sleep(2000);
 		driver.navigate().back();
 		
+		//login
+		driver.findElement(By.xpath("//span[contains(@class,'mmr-txt-all text-blue')]")).click();
+		driver.findElement(By.id("email")).sendKeys("SSIET@mailinaitor.com");
+		driver.findElement(By.id("password")).sendKeys("Demo123");
+		Thread.sleep(2000);
+		driver.findElement(By.id("loginbtn")).click();
+
 		
 		//To close the browser
 		Thread.sleep(5000);
